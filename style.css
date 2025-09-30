@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+#r2,
+#r3,
+#r4 {
+    height: 10em;
+}
+
+#r1 {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#r5 {
+    height: 20em;
+}
+
+#r6 {
+    height: 15em;
+    border-bottom: solid 1px white;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+#r7 {
+    height: 5em;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header,
+#r1>:last-child {
+    display: flex;
+}
+
+.header {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding: 1em 10%;
+
+}
+
+#r1>:last-child {
+    flex-basis: 8em;
+    display: flex;
+    margin-bottom: 1px;
+}
+
+.row {
+    display: flex;
+}
+
+.link {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    padding-left: .5em;
+    height: 1.5em;
+    flex-grow: 1;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: .5em;
+    flex-grow: 1;
+}
+
+.centered {
+    justify-content: center;
+    align-items: center;
+}
+
+#r3 {
+    flex-direction: row-reverse;
+}
+
+#r3 .normal-rectangle {
+    border-right: 1px dashed;
+    border-left: none;
+}
+
+
+/* bordi */
+
+.dashed {
+    border: 1px dashed
+}
+
+.white-dashed {
+    border: 1px dashed white;
+}
+
+
+/* colori*/
+
+.background-cobalt {
+    background-color: #3160e0;
+}
+
+.background-salmon {
+    background-color: #f08180;
+}
+
+.background-aqua {
+    background-color: aquamarine;
+}
+
+.background-green {
+    background-color: #218b21;
+}
+
+.background-pink {
+    background-color: #ffc0ca;
+}
+
+.background-dark-pink {
+    background-color: #ee82ed;
+}
+
+
+.background-blue {
+    background-color: #1e90ff;
+}
+
+.background-black {
+    background-color: black;
+}
+
+.background-grey {
+    background-color: lightgray;
+}
+
+.background-lightblue {
+    background-color: lightblue;
+}
+
+.background-darkblue {
+    background-color: rgb(0, 0, 138);
+}
+
+
+/* forme geometriche */
+
+.rectangle {
+    width: 15em;
+    height: 6em;
+}
+
+.large-rectangle {
+    height: 18em;
+    width: 24em;
+}
+
+.tall-rectangle {
+    height: 13em;
+    width: 7em;
+}
+
+.medium-rectangle {
+    height: 13em;
+    width: 17em;
+    display: flex;
+}
+
+.normal-rectangle {
+    height: 8em;
+    width: 16em;
+    border-right: none;
+}
+
+.sub-rectangle {
+    width: 5em;
+}
+
+.long-rectangle {
+    width: 24em;
+    height: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.square {
+    height: 8em;
+    width: 8em;
+}
+
+.button {
+    width: 4em;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-white-rounded {
+    background-color: white;
+    border-radius: 1em;
+    padding: .5em;
+    border: none;
+}
