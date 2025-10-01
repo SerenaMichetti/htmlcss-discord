@@ -10,8 +10,12 @@ main {
     flex-direction: column;
 }
 
-#r2,
-#r3,
+#r2, #r3{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 5%;
+}
+
 #r4 {
     height: 10em;
 }
@@ -55,11 +59,17 @@ main {
     flex-basis: 8em;
     display: flex;
     margin-bottom: 1px;
-    padding-top:3em;
+    padding-top: 3em;
 }
 
 .row {
     display: flex;
+}
+
+.text-container {
+    flex-direction: column;
+    gap: 2em;
+   justify-content: space-around;
 }
 
 .link {
@@ -176,9 +186,28 @@ main {
     background-position: center;
 }
 
+.img,
+.text-container {
+    flex-basis: 50%;
+    padding: 0 20px;
+
+}
+
+.img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* forme geometriche */
 
 .rectangle {}
+
+.normal-rectangle {
+    height: 8em;
+    width: 16em;
+    border-right: none;
+}
 
 .large-rectangle {
     height: 18em;
@@ -196,11 +225,7 @@ main {
     display: flex;
 }
 
-.normal-rectangle {
-    height: 8em;
-    width: 16em;
-    border-right: none;
-}
+
 
 .sub-rectangle {
     width: 5em;
